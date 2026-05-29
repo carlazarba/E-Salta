@@ -49,8 +49,7 @@ function SimuladorPagoQRInner() {
   };
 
   return (
-    <section id="simulador-pago" className="section-padding bg-gris-fondo">
-      <div className="container-max">
+    <div className="w-full max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -444,8 +443,7 @@ function SimuladorPagoQRInner() {
             </div>
           </motion.div>
         )}
-      </div>
-    </section>
+    </div>
   );
 }
 

@@ -13,6 +13,8 @@ const navLinks = [
   { href: "#beneficios", label: "Beneficios" },
 ];
 
+const ctaLink = { href: "/simulador", label: "Probar simulador" };
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -45,8 +47,8 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#hero" className="btn-primary text-sm">
-            Comenzar
+          <a href={ctaLink.href} className="btn-primary text-sm">
+            {ctaLink.label}
           </a>
         </div>
 
@@ -73,11 +75,11 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#hero"
+              href={ctaLink.href}
               className="btn-primary block text-center text-sm mt-3"
               onClick={() => setIsOpen(false)}
             >
-              Comenzar
+              {ctaLink.label}
             </a>
           </div>
         </div>

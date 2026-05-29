@@ -1,30 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { QrCode, Edit3, CreditCard, ShieldCheck } from "lucide-react";
+import { Car, Timer, CreditCard, ShieldCheck } from "lucide-react";
 
 const steps = [
   {
-    icon: QrCode,
-    title: "Escaneá el QR",
+    icon: Car,
+    title: "Estacioná",
     description:
-      "El permisionario registra tu patente y se inicia automáticamente el cronómetro de tu estacionamiento.",
+      "Estacionás como de costumbre. El permisionario registra tu patente y se inicia automáticamente el cronómetro de tu estacionamiento.",
   },
   {
-    icon: Edit3,
-    title: "Ingresá tu patente",
+    icon: Timer,
+    title: "Control propio",
     description:
-      " También podés activar tu propio cronómetro como control personal del tiempo de estacionamiento.",
+      "Podés activar tu propio cronómetro como control personal del tiempo de estacionamiento.",
   },
   {
     icon: CreditCard,
-    title: "Pagá digitalmente",
+    title: "Pagá digitalmente o en efectivo",
     description:
       "Elegí cómo pagar: QR Mercado Pago, tarjeta, NFC o efectivo. Con 20% de descuento si pagás digital.",
   },
   {
     icon: ShieldCheck,
-    title: "Estacioná tranquilo",
+    title: "Corroborá tu ticket",
     description:
       "Recibí tu comprobante digital, con la seguridad de la Municipalidad de Salta respaldando tu pago.",
   },
@@ -42,7 +42,7 @@ export default function ComoFunciona() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            ¿Cómo funciona?
+            ¿Cómo funciona para el conductor?
           </h2>
           <p className="text-gris-texto text-lg max-w-2xl mx-auto">
             Un sistema simple y seguro para gestionar el estacionamiento medido en

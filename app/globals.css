@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 bg-white antialiased;
+  }
+
+  ::selection {
+    @apply bg-azul-100 text-azul-700;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-azul text-white px-6 py-3 rounded-xl font-semibold
+           hover:bg-azul-700 transition-all duration-300
+           hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-azul text-azul px-6 py-3 rounded-xl font-semibold
+           hover:bg-azul hover:text-white transition-all duration-300
+           hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0;
+  }
+
+  .btn-bordo {
+    @apply bg-bordo text-white px-6 py-3 rounded-xl font-semibold
+           hover:bg-bordo-600 transition-all duration-300
+           hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+}
